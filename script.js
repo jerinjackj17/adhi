@@ -1,5 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Populate Education Section
+const resumeLink = document.createElement("a");
+resumeLink.href = "https://jerinjackj17.github.io/resume.pdf";
+resumeLink.innerText = "Download Resume";
+resumeLink.target = "_blank";
+resumeLink.classList.add("button");
+document.querySelector("#education").appendChild(resumeLink);
+
     const educationSection = document.getElementById("education");
     educationSection.innerHTML = `
         <h3>Education</h3>
